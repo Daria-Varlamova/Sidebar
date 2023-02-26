@@ -22,12 +22,16 @@
 }
 
 @media screen and (max-width: 420px) {
-  .close .burger {
+  .burger {
     position: fixed;
     left: 0;
     top: 0;
     width: 50px;
     height: 63px;
     background: var(--bkg-color-3);
+  }
+
+  .close .burger { 
+    position: static;
   }
 }

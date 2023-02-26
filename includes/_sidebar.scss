@@ -76,7 +76,7 @@
     max-width: 100%;
   }
   
-  .close.sidebar {
+  .sidebar {
     max-width: 100%;
     position: absolute;
     left: -100%;
@@ -86,7 +86,7 @@
     grid-template-rows: 1fr 10fr 1fr;
   }
 
-  .sidebar {
+  .close.sidebar {
     left: 0;
   }
 

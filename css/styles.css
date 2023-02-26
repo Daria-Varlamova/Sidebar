@@ -170,13 +170,16 @@ p {
 }
 
 @media screen and (max-width: 420px) {
-  .close .burger {
+  .burger {
     position: fixed;
     left: 0;
     top: 0;
     width: 50px;
     height: 63px;
     background: var(--bkg-color-3);
+  }
+  .close .burger {
+    position: static;
   }
 }
 
@@ -278,7 +281,7 @@ p {
   .sidebar {
     max-width: 100%;
   }
-  .close.sidebar {
+  .sidebar {
     max-width: 100%;
     position: absolute;
     left: -100%;
@@ -287,7 +290,7 @@ p {
     -ms-grid-rows: 1fr 10fr 1fr;
         grid-template-rows: 1fr 10fr 1fr;
   }
-  .sidebar {
+  .close.sidebar {
     left: 0;
   }
   .sidebar-inner,

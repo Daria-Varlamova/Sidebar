@@ -1,0 +1,155 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/InterRegular.eot');
+  src: url('/fonts/InterRegular.eot') format('embedded-opentype'),
+    url('/fonts/InterRegular.woff2') format('woff2'),
+    url('/fonts/InterRegular.woff') format('woff'),
+    url('/fonts/InterRegular.ttf') format('truetype'),
+    url('/fonts/InterRegular.svg#InterRegular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/InterMedium.eot');
+  src: url('/fonts/InterMedium.eot') format('embedded-opentype'),
+    url('/fonts/InterMedium.woff2') format('woff2'),
+    url('/fonts/InterMedium.woff') format('woff'),
+    url('/fonts/InterMedium.ttf') format('truetype'),
+    url('/fonts/InterMedium.svg#InterMedium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/InterSemiBold.eot');
+  src: url('/fonts/InterSemiBold.eot') format('embedded-opentype'),
+    url('/fonts/InterSemiBold.woff2') format('woff2'),
+    url('/fonts/InterSemiBold.woff') format('woff'),
+    url('/fonts/InterSemiBold.ttf') format('truetype'),
+    url('/fonts/InterSemiBold.svg#InterSemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@keyframes fadeInItem {
+  100% {
+    transform: translatex(0px);
+    opacity: 1;
+  }
+}
+
+.body {
+  font-family: 'Inter';
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+
+  --text-color: #52525b;
+  --text-color-2: #3f3f46;
+  --text-color-3: #52525b;
+
+  --logo-color: #18181b;
+
+  --bkg-color: #ffffff;
+  --bkg-color-3: #f9fafb;
+  --line-bkg-color: #e5e7eb;
+  --burger-color: #71717a;
+
+  --grey-color: #52525b;
+  --input-border: #d4d4d8;
+
+  --link-bkg: #ede9fe;
+  --text-input-color: #a1a1aa;
+  --active-color: #7C3AED;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+}
+
+input:-webkit-autofill {
+  box-shadow: inset 0 0 0 50px #ffffff !important;
+  -webkit-text-fill-color: black !important;
+}
+
+input:-internal-autofill-selected {
+  box-shadow: inset 0 0 0 50px #ffffff !important;
+  -webkit-text-fill-color: black !important;
+}
+
+a {
+  font-family: 'Inter', 'Arial';
+  text-decoration: none;
+  outline: none;
+  color: var(--text-color);
+}
+
+img {
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .body {
+    --text-color: #a1a1aa;
+    --text-color-2: #ffffff;
+    --text-color-3: #9ca3af;
+
+    --logo-color: #ffffff;
+
+    --bkg-color: #18181b;
+    --bkg-color-3: #27272a;
+    --line-bkg-color: #27272a;
+
+    --grey-color: #71717a;
+    --input-border: #3f3f46;
+    --link-bkg: #3f3f46;
+    --burger-color: #71717a;
+    --text-input-color: #71717a;
+    --active-color: #FFFFFF;
+  }
+}
+
+.body {
+  background: var(--bkg-color);
+}
+
+h1,
+p {
+  color: var(--text-color);
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
+  background: #9ca3af;
+}
+
+@import '../includes/burger';
+@import '../includes/sidebar';
+@import '../includes/logo';
+@import '../includes/form';
+@import '../includes/menu-nav';
+@import '../includes/btn';
+@import '../includes/person-card';

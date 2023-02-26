@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Sidebar</title>
+  </head>
+  <body class="body">
+    <div class="page">
+      <div class="sidebar sidebar-js close">
+        <div class="sidebar-header">
+          <div class="burger btn-menu-toggle-js">
+            <svg class="icon">
+              <use href="sprite.svg#burger"></use>
+            </svg>
+          </div>
+          <a href="#" class="logo-link">
+            <svg class="logo">
+              <use href="sprite.svg#logo"></use>
+            </svg>
+          </a>
+        </div>
+
+        <div class="sidebar-inner">
+          <div class="sidebar__wrap">
+            <form class="form">
+              <fieldset class="form__fieldset">
+                <svg class="form__icon-search icon-search">
+                  <use href="sprite.svg#search"></use>
+                </svg>
+
+                <input placeholder="Search" class="form__input" type="text" />
+              </fieldset>
+            </form>
+
+            <nav class="menu-nav">
+              <ul class="menu-list">
+                <li class="menu-list__item">
+                  <a class="menu-list__link menu-link active" href="#">
+                    <div class="menu-link__inner">
+                      <svg class="menu-link__icon">
+                        <use href="sprite.svg#home"></use>
+                      </svg>
+                      <span class="menu-link__title">Главная</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="menu-list__item">
+                  <a class="menu-list__link menu-link" href="#">
+                    <div class="menu-link__inner">
+                      <svg class="menu-link__icon">
+                        <use href="sprite.svg#inbox"></use>
+                      </svg>
+                      <span class="menu-link__title">Входящие</span>
+                    </div>
+                    <div class="menu-list__count">
+                      <span>12</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="menu-list__item">
+                  <a class="menu-list__link menu-link" href="#">
+                    <div class="menu-link__inner">
+                      <svg class="menu-link__icon">
+                        <use href="sprite.svg#list"></use>
+                      </svg>
+                      <span class="menu-link__title">Задачи</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="menu-list__item">
+                  <a class="menu-list__link menu-link" href="#">
+                    <div class="menu-link__inner">
+                      <svg class="menu-link__icon">
+                        <use href="sprite.svg#activity"></use>
+                      </svg>
+                      <span class="menu-link__title">Активность</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="menu-list__item">
+                  <a class="menu-list__link menu-link" href="#">
+                    <div class="menu-link__inner">
+                      <svg class="menu-link__icon">
+                        <use href="sprite.svg#users"></use>
+                      </svg>
+                      <span class="menu-link__title">Команда</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="menu-list__item line"></li>
+
+                <li class="menu-list__item">
+                  <a class="menu-list__link menu-link" href="#">
+                    <div class="menu-link__inner">
+                      <svg class="menu-link__icon">
+                        <use href="sprite.svg#folder"></use>
+                      </svg>
+                      <span class="menu-link__title">Проекты</span>
+                    </div>
+                  </a>
+                  <ul class="list">
+                    <li class="list__item">
+                      <a class="list__link menu-link" href="#">
+                        <img src="./pictures/dot-1.png" alt="" />
+                        <span class="menu-link__title">Дизайн</span>
+                      </a>
+                    </li>
+                    <li class="list__item">
+                      <a class="list__link menu-link" href="#">
+                        <img src="./pictures/dot-2.png" alt="" />
+                        <span class="menu-link__title">Веб</span>
+                      </a>
+                    </li>
+                    <li class="list__item">
+                      <a class="list__link menu-link" href="#">
+                        <img src="./pictures/dot-3.png" alt="" />
+                        <span class="menu-link__title">Редактура</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <button class="btn">
+            <svg class="btn__icon">
+              <use href="sprite.svg#plus"></use>
+            </svg>
+            <span class="btn__title">Создать проект</span>
+          </button>
+        </div>
+
+        <div class="sidebar-footer">
+          <div class="person-card is-online">
+            <div class="person-card__wrap-img">
+              <div class="person-card__img">
+                <img src="./pictures/avatar.png" alt="" />
+              </div>
+            </div>
+            <div class="person-card__text-block">
+              <div class="person-card__name">Михаил Воробьев</div>
+              <div class="person-card__job">Разработчик</div>
+            </div>
+          </div>
+          <div class="btn-more">
+            <svg class="icon">
+              <use href="sprite.svg#more"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <section class="section"></section>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

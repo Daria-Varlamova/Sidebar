@@ -1,0 +1,61 @@
+.btn {
+  width: 100%;
+  padding: 10px 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7.33px;
+
+  background: #7c3aed;
+  border-radius: 4px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: #ffffff;
+  transition: scale 0.2s ease-in;
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+
+    stroke: #ffffff;
+  }
+}
+
+.btn-more {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .icon {
+    width: 24px;
+    height: 24px;
+    stroke: var(--text-input-color);
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .btn:hover {
+    scale: 1.03;
+    transition: scale 0.2s ease-in;
+  }
+
+  .close {
+    .btn {
+      width: 36px;
+      height: 36px;
+      padding: 8px 0;
+      &__title {
+        display: none;
+      }
+    }
+    .btn-more {
+      display: none;
+    }
+  }
+}

@@ -275,8 +275,12 @@ p {
 }
 
 @media screen and (max-width: 420px) {
+  .sidebar {
+    max-width: 100%;
+  }
   .close.sidebar {
     max-width: 100%;
+    position: absolute;
     left: -100%;
   }
   .sidebar {
